@@ -6,19 +6,15 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #0a0a0a;
-    color: #fff;
+    background-color: #000000; /* Negro Espacial */
+    color: #f4f4f4; /* Cor de texto mais clara */
     line-height: 1.6;
 }
 
-
-
-/* metade */
-
+/* Tema Star Wars */
 .black-sky {
-    background-color: black;
-    color: white;
-
+    background-color: #000000; /* Fundo negro profundo */
+    color: #FFCC00; /* Amarelo Dourado para elementos de destaque */
 }
 
 body::before {
@@ -31,7 +27,6 @@ body::before {
     background: url('https://www.transparenttextures.com/patterns/stars.png') repeat; /* Imagem de estrelas */
     z-index: -1;
 }
-
 
 .stars {
     position: absolute;
@@ -53,7 +48,7 @@ body::before {
 }
 
 header {
-    background-color: #1a1a1a;
+    background-color: #000080;
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
 }
@@ -140,7 +135,7 @@ nav ul li a:hover {
 
 footer {
     margin-top: 50px;
-    background-color: #1a1a1a;
+    background-color: #4169E1;
     padding: 20px 0;
     text-align: center;
     font-size: 1rem;
@@ -151,11 +146,15 @@ footer p {
 }
 
 #foto {
-    width: auto;
-    height: auto;
+    width: 50%;
+    height: 25%;
+    border-radius: 30%;
+}
+
+#tit{
     margin-top: 30px;
-    border-radius: 30px;
-    box-shadow: 25px 0px 15px #FF6F00;
+    justify-content: center;
+    text-align: center;
 }
 
 #logo {
@@ -163,6 +162,10 @@ footer p {
     height: 100px;
     border-radius: 50%;
     transition: transform 0.3s ease;
+}
+
+#foto:hover {
+    transform: scale(1.1);
 }
 
 #logo:hover {
@@ -242,13 +245,18 @@ footer p {
 
 #img{
     margin-top: 35px;
-    width: 10%;
+    width: 15%;
     height: auto;
-    border-radius: 30px;
+    border-radius: 50px;
     display: block;
     margin-left: auto; 
     margin-right: auto; 
 }
+
+#img:hover {
+    transform: scale(1.1);
+}
+
 #imgh{
     margin-top: 20px;
     width: 15%;
@@ -259,22 +267,31 @@ footer p {
     margin-right: auto;
 
 }
+
+#imgh:hover {
+    transform: scale(1.1);
+}
 #title{
     text-align: center;
     color: #FFD700;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 #t2{
  margin-top: 20px;
 }
-#title2{
-    color: white;
-    font-size: 1rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+#icone{
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
 }
+.historia {
+  
+}
+
 
 @media (max-width: 768px) {
     nav ul {
