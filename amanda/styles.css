@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000000; /* Negro Espacial */
-    color: #f4f4f4; /* Cor de texto mais clara */
+    background-color: #000; /* Fundo escuro como o espaço */
+    color: #f1f1f1;
     line-height: 1.6;
 }
 
@@ -60,6 +60,8 @@ nav {
     flex-wrap: wrap;
 }
 
+
+
 nav .logo {
     height: 80px;
 }
@@ -87,29 +89,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #FF6F00;
     text-shadow: 0px 0px 10px rgba(255, 165, 0, 0.8);
-}
-
-.hero {
-    background: url('img/star-background.jpg') no-repeat center center/cover;
-    padding: 120px 0;
-    text-align: center;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.hero h1 {
-
-    font-family: 'Star Wars', sans-serif;
-    font-size: 4rem;
-    color: #FFD700;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-.hero p {
-    font-size: 1.5rem;
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .content {
@@ -288,10 +267,108 @@ footer p {
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
-.historia {
-  
+
+
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00; /* Cor amarela como referência a Star Wars */
+}
+
+/* Estilo para a seção de herói */
+.hero {
+    background-image: url('https://path/to/your/starwars-image.jpg'); /* Substitua pela imagem desejada */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-family: 'Star Wars', sans-serif;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Estilo para o conteúdo das histórias */
+.content {
+    background-color: #222;
+    padding: 50px 0;
+}
+
+.content .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.historia {
+    background-color: #333;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.historia h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+.historia p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.historia:hover {
+    background-color: #444;
+    transform: translateY(-5px);
+}
 
 @media (max-width: 768px) {
     nav ul {
